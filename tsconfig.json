@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "ImagemNL Node 18",
+
+  "compilerOptions": {
+    "lib": ["es2022", "dom"],
+    "module": "commonjs",
+    "target": "es2022",
+
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "moduleResolution": "Node",
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+
+    "sourceMap": true,
+    "declarationDir": "./dist/types",
+
+    "baseUrl": ".",
+    "outDir": "./dist"
+  },
+
+  "exclude": [".nuxt", "dist", "node_modules", "**/*.d.ts"]
+}

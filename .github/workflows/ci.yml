@@ -1,0 +1,24 @@
+name: Package validation
+
+on:
+  push:
+    branches:
+      - develop
+      - master
+      - next
+    tags:
+      - "v*"
+  pull_request:
+
+jobs:
+  package-validation:
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
